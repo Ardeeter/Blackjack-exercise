@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="css/blackjack.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <div class="message-box" id="messages">
+      <div class="score">
+        <div class="player-score">
+          <div class="player-name">Player</div>
+          <div class="player-score-box">
+            <div class="player-score-shown"></div>
+          </div>
+        </div>
+        <div class="round">
+          <div class="round-name">Cards Left</div>
+          <div class="round-number">
+            <div class="cards-left-shown"></div>
+          </div>
+        </div>
+        <div class="dealer-score">
+          <div class="dealer-name">Dealer</div>
+          <div class="dealer-score-box">
+            <div class="dealer-score-shown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <div class="message">Welcome to BlackJack!</div>
+      <div class="player">
+        <label class="player-name2">Dealer: 
+          <span id="dealer-points" class="points"></span>
+        </label>
+        <div id="dealer-hand" class="hand">
+          <!-- Dealer Hand -->
+        </div>
+      </div>
+      <div class="player">
+        <label class="player-name2">Player: 
+          <span id="player-points" class="points"></span>
+        </label>
+        <div id="player-hand" class="hand">
+          <!-- Player Hand -->
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="deal-button" type="button">Deal</button>
+        <button id="hit-button" type="button">Hit</button>
+        <button id="stand-button" type="button">Stand</button>
+        <button id="again-button" type="button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
